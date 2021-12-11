@@ -27,12 +27,77 @@ html {
 /* PROJECT */
 
 body {
-	background-color: var(--bright-orange);
+	background-color: var(--very-light-gray);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
 	font-family: "Big Shoulders Display", cursive;
+	font-size: 5.05rem;
+	text-transform: uppercase;
+	margin-top: 4.2rem;
+	margin-bottom: 3.3rem;
+	color: var(--very-light-gray);
 }
+
 p {
 	font-family: "Lexend Deca", sans-serif;
+	font-size: 1.85rem;
+	line-height: 1.7;
+	letter-spacing: 0.04rem;
+    color: var(--transparent-white);
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	max-width: 38.8rem;
+	min-height: 63.3rem;
+	background-color: red;
+	flex: 1 1 0;
+	padding: 5.9rem;
+}
+
+.sedans {
+	background-color: var(--bright-orange);
+}
+
+.suvs {
+	background-color: var(--dark-cyan);
+}
+
+.luxury {
+	background-color: var(--very-dark-cyan);
+}
+
+.card img {
+	width: 8rem;
+}
+
+.more {
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 1.9rem;
+	color: hsla(0, 0%, 100%, .15);
+	background-color: var(--very-light-gray);
+	padding: 1.9rem 3.85rem;
+	border-radius: 3rem;
+	margin-top: 10.4rem;
+	border: 0;
+}
+
+.card:first-child {
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+.card:last-child {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
 }
